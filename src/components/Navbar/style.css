@@ -1,0 +1,11 @@
+@media screen and (max-width: 1024px) {
+  #menu-options {
+      display: none;
+  }
+  .hidden {
+    display: none !important;
+  }
+  .block {
+    display: block !important;
+  }
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from "./components/Navbar";
-import EmployeeCard from "./components/EmployeeCard";
+import ProjectCard from "./components/ProjectCard";
 import Footer from "./components/Footer"
 import CardContainer from './components/CardContainer';
 
@@ -9,11 +9,7 @@ function App() {
     <div>
       <Navbar />
       <CardContainer>
-        <EmployeeCard />
-        <EmployeeCard />
-        <EmployeeCard />
-        <EmployeeCard />
-        <EmployeeCard />
+        <ProjectCard />
 
       </CardContainer>
       <Footer />

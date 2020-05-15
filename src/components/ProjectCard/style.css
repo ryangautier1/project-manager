@@ -1,0 +1,15 @@
+#project-card {
+  width: 650px;
+}
+
+@media screen and (max-width: 750px) {
+  #project-card {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #project-card {
+    width: 300px;
+  }
+}

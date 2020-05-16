@@ -10,7 +10,9 @@ function App() {
       <Navbar />
       <CardContainer>
         <ProjectCard />
-
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
       </CardContainer>
       <Footer />
     </div>

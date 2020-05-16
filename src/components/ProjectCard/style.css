@@ -1,5 +1,5 @@
 #project-card {
-  min-width: 50%;
+  width: 50%;
 }
 
 @media screen and (max-width: 850px) {

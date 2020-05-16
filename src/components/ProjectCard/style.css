@@ -1,15 +1,9 @@
-#project-card {
+.project-card {
   width: 50%;
 }
 
 @media screen and (max-width: 850px) {
-  #project-card {
+  .project-card {
     width: 100%;
   }
 }
-
-/* @media screen and (max-width: 450px) {
-  #project-card {
-    width: 100%;
-  }
-} */

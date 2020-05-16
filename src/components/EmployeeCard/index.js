@@ -1,11 +1,11 @@
 import React from "react";
-import pic from "../../ryanpicturesquare.png"
-import "./style.css"
+import pic from "../../ryanpicturesquare.png";
+import "./style.css";
 
 function EmployeeCard() {
   return (
     //Container for card
-    <div className="px-3" id="employee-card">
+    <div className="px-3 employee-card">
       {/* Contatiner for card content */}
       <div className="max-w-sm rounded overflow-hidden shadow-lg my-5 mx-auto border-gray-100 border p-4">
         {/* Container for Card Heading */}

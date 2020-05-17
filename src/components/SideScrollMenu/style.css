@@ -1,2 +1,21 @@
-.sidescroll-menu {
+/* width */
+.sidescroll-menu::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.sidescroll-menu::-webkit-scrollbar-track {
+  /* background: #1a202c;  */
+  border-radius: 10px;
+}
+
+/* Handle */
+.sidescroll-menu::-webkit-scrollbar-thumb {
+  background: #ed88367c; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.sidescroll-menu::-webkit-scrollbar-thumb:hover {
+  background: #ed8836cc; 
 }

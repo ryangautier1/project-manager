@@ -20,7 +20,7 @@ function SideScrollMenu() {
       <div className="flex flex-row">
       {data.map(item => {
         return (
-        <div className="mx-3 border border-orange-500 rounded-full px-4 py-1 whitespace-no-wrap">{item}</div>
+        <div className="mx-3 border border-orange-500 rounded-full px-4 py-1 whitespace-no-wrap cursor-pointer">{item}</div>
         )
       })}
       </div>

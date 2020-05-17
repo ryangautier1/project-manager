@@ -1,0 +1,30 @@
+.task-card {
+  width: 225px;
+  height: 327px;
+}
+
+.task-employees {
+  max-height: 230px;
+}
+
+/* width */
+.task-employees::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.task-employees::-webkit-scrollbar-track {
+  /* background: #1a202c;  */
+  border-radius: 10px;
+}
+
+/* Handle */
+.task-employees::-webkit-scrollbar-thumb {
+  background: #ed88367c; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.task-employees::-webkit-scrollbar-thumb:hover {
+  background: #ed8836cc; 
+}

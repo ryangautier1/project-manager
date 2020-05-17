@@ -1,6 +1,20 @@
+#left-bar {
+  height: calc(100vh - 5rem)!important;
+}
+
+.push-right {
+  left: 16rem;
+  width: calc(100vw - 17.25rem)!important;
+}
+
+.push-down {
+  top: 78px;
+}
+
+
 @media screen and (max-width: 1024px) {
   #menu-options {
-      display: none;
+    display: none;
   }
   .hidden {
     display: none !important;

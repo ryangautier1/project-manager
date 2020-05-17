@@ -4,7 +4,7 @@ import TaskCards from "../TaskCards";
 
 function ProjectInfoTable(props) {
   return (
-    <div className="mt-8 px-5 md:px-12 lg:px-20 w-full">
+    <div className="mt-8 px-4 w-full">
 
       <h2 className="text-xl py-3">
         Project Title

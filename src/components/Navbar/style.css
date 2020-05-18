@@ -2,6 +2,10 @@
   height: calc(100vh - 5rem)!important;
 }
 
+#left-toggle-open {
+  height: calc(100vh - 5rem)!important;
+}
+
 .push-right {
   left: 16rem;
   width: calc(100vw - 17.25rem)!important;
@@ -9,6 +13,14 @@
 
 .push-down {
   top: 78px;
+}
+
+.left-toggle-icon {
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 
 

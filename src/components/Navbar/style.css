@@ -33,10 +33,22 @@
   #menu-options {
     display: none;
   }
-  .hidden {
-    display: none !important;
-  }
   .block {
     display: block !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .my-block {
+    display: block !important;
+  }
+  .push-right-nav-open {
+    left: 0;
+    width: 100vw!important;
+  }
+  
+  .push-right-nav-closed {
+    left: 0;
+    width: 100vw!important;
   }
 }

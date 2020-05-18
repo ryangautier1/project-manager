@@ -83,7 +83,6 @@ function Navbar(props) {
           <div className="mt-6 pl-3 pb-1 w-48 text-lg menu-item">Teams</div>
           <div className="mt-6 pl-3 pb-1 w-48 text-lg menu-item">Employees</div>
           <div className="mt-6 pl-3 pb-1 w-48 text-lg menu-item">Projects</div>
-          <div className="mt-6 pl-3 pb-1 w-48 text-lg menu-item">Teams</div>
           <div className="h-full w-5 absolute right-0 top-0 hover:bg-orange-100" onClick={leftNavRes}>
             <i className="fas fa-angle-double-left left-toggle-icon text-gray-600"></i>
           </div>

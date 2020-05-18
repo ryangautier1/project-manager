@@ -20,6 +20,15 @@
   top: 78px;
 }
 
+
+.menu-item {
+  border: 2px solid transparent;
+}
+
+.menu-item:hover {
+  border: 2px solid #ed8936;
+}
+
 .left-toggle-icon {
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
@@ -46,11 +55,11 @@
 
   .push-right-nav-open {
     left: 0;
-    width: 100vw!important;
+    width: 100%!important;
   }
   
   .push-right-nav-closed {
     left: 0;
-    width: 100vw!important;
+    width: 100%!important;
   }
 }

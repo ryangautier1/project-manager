@@ -89,7 +89,7 @@ function Navbar(props) {
           </div>
         </div>
         {/* toggle for opening nav */}
-        <div className="w-5 absolute left-0 top-0 hover:bg-orange-100 hidden fixed mt-20 border-r border-orange-300" id="left-toggle-open" onClick={leftNavRes}>
+        <div className="w-5 fixed left-0 top-0 hover:bg-orange-100 hidden fixed mt-20 border-r border-orange-300" id="left-toggle-open" onClick={leftNavRes}>
           <i className="fas fa-angle-double-right left-toggle-icon text-gray-600"></i>
         </div>
       </div>

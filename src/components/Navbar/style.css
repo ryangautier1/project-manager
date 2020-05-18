@@ -33,15 +33,17 @@
   #menu-options {
     display: none;
   }
-  .block {
-    display: block !important;
-  }
 }
 
 @media screen and (max-width: 640px) {
   .my-block {
     display: block !important;
   }
+
+  #left-toggle-open{
+    display: none !important;
+  }
+
   .push-right-nav-open {
     left: 0;
     width: 100vw!important;

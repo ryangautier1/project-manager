@@ -2,6 +2,32 @@
   width: 50%;
 }
 
+.project-employees {
+  max-height: 230px;
+}
+
+/* width */
+.project-employees::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.project-employees::-webkit-scrollbar-track {
+  /* background: #1a202c;  */
+  border-radius: 10px;
+}
+
+/* Handle */
+.project-employees::-webkit-scrollbar-thumb {
+  background: #ed88367c; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.project-employees::-webkit-scrollbar-thumb:hover {
+  background: #ed8836cc; 
+}
+
 @media screen and (max-width: 850px) {
   .project-card {
     width: 100%;

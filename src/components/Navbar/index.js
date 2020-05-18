@@ -66,17 +66,34 @@ function Navbar(props) {
         <nav className="z-10 flex w-full fixed items-center justify-between flex-wrap bg-white border-b border-gray-200 p-6">
 
           <div className="flex items-center flex-shrink-0 text-orange-500 mr-6">
-          <Link to="/">
-            <span className="font-semibold text-xl tracking-tight">Project Manager</span>
-          </Link>
+            <Link to="/">
+              <span className="font-semibold text-xl tracking-tight">Project Manager</span>
+            </Link>
           </div>
           <div className="block sm:hidden" onClick={navRes}>
             <button className="flex items-center px-3 py-2 border rounded text-orange-500 border-orange-500 hover:text-orange-700 hover:border-orange-700">
               <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" /></svg>
             </button>
           </div>
-          <div className="w-full sm:flex sm:items-center justify-between sm:w-auto" id="menu-options">
-            <div className="inline-block text-sm px-4 py-2 leading-none border rounded text-orange-500 border-orange-500 hover:border-transparent hover:text-white hover:bg-orange-500 mt-4 lg:mt-0">Download</div>
+          <div className="w-full sm:flex sm:items-center justify-between sm:w-auto sm:block hidden" id="menu-options">
+            <div className="sm:hidden">
+            <Link to="/projects">
+              <div className="mt-2 pb-1 w-48 text-md cursor-pointer" onClick={navRes}>
+                Projects
+              </div>
+            </Link>
+            <Link to="/projectinfo">
+              <div className="mt-2 pb-1 w-48 text-md cursor-pointer" onClick={navRes}>
+                Project Info
+              </div>
+            </Link>
+            <Link to="/employees">
+              <div className="mt-2 pb-1 w-48 text-md cursor-pointer" onClick={navRes}>
+                Employees
+              </div>
+            </Link>
+            </div>
+            <div className="inline-block text-sm px-4 py-2 leading-none border rounded text-orange-500 border-orange-500 hover:border-transparent hover:text-white hover:bg-orange-500 mt-4 sm:mt-0">Download</div>
 
           </div>
 
@@ -84,21 +101,21 @@ function Navbar(props) {
 
         {/* left bar */}
         <div className="hidden sm:block w-64 fixed left-0 mt-20 border-r border-orange-300 p-5" id="left-bar">
-        <Link to="/projects">
-          <div className="mt-6 pl-3 pb-1 w-48 text-lg menu-item cursor-pointer">
-            Projects            
+          <Link to="/projects">
+            <div className="mt-6 pl-3 pb-1 w-48 text-lg menu-item cursor-pointer">
+              Projects
           </div>
-        </Link>
-        <Link to="/projectinfo">
-          <div className="mt-6 pl-3 pb-1 w-48 text-lg menu-item cursor-pointer">
-            Project Info
+          </Link>
+          <Link to="/projectinfo">
+            <div className="mt-6 pl-3 pb-1 w-48 text-lg menu-item cursor-pointer">
+              Project Info
           </div>
-        </Link>
-        <Link to="/employees">
-          <div className="mt-6 pl-3 pb-1 w-48 text-lg menu-item cursor-pointer">
-            Employees
+          </Link>
+          <Link to="/employees">
+            <div className="mt-6 pl-3 pb-1 w-48 text-lg menu-item cursor-pointer">
+              Employees
           </div>
-        </Link>
+          </Link>
           <div className="h-full w-5 absolute right-0 top-0 hover:bg-orange-100" onClick={leftNavRes}>
             <i className="fas fa-angle-double-left left-toggle-icon text-gray-600"></i>
           </div>

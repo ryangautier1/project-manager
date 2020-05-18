@@ -37,13 +37,6 @@
   left: 50%;
 }
 
-
-@media screen and (max-width: 1024px) {
-  #menu-options {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 640px) {
   .my-block {
     display: block !important;

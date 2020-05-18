@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./style.css"
+
 // import { Link } from "react-router-dom";
 
 
@@ -64,7 +66,9 @@ function Navbar(props) {
         <nav className="z-10 flex w-full fixed items-center justify-between flex-wrap bg-white border-b border-gray-200 p-6">
 
           <div className="flex items-center flex-shrink-0 text-orange-500 mr-6">
+          <Link to="/">
             <span className="font-semibold text-xl tracking-tight">Project Manager</span>
+          </Link>
           </div>
           <div className="block sm:hidden" onClick={navRes}>
             <button className="flex items-center px-3 py-2 border rounded text-orange-500 border-orange-500 hover:text-orange-700 hover:border-orange-700">
@@ -80,9 +84,21 @@ function Navbar(props) {
 
         {/* left bar */}
         <div className="hidden sm:block w-64 fixed left-0 mt-20 border-r border-orange-300 p-5" id="left-bar">
-          <div className="mt-6 pl-3 pb-1 w-48 text-lg menu-item">Teams</div>
-          <div className="mt-6 pl-3 pb-1 w-48 text-lg menu-item">Employees</div>
-          <div className="mt-6 pl-3 pb-1 w-48 text-lg menu-item">Projects</div>
+        <Link to="/projects">
+          <div className="mt-6 pl-3 pb-1 w-48 text-lg menu-item cursor-pointer">
+            Projects            
+          </div>
+        </Link>
+        <Link to="/projectinfo">
+          <div className="mt-6 pl-3 pb-1 w-48 text-lg menu-item cursor-pointer">
+            Project Info
+          </div>
+        </Link>
+        <Link to="/employees">
+          <div className="mt-6 pl-3 pb-1 w-48 text-lg menu-item cursor-pointer">
+            Employees
+          </div>
+        </Link>
           <div className="h-full w-5 absolute right-0 top-0 hover:bg-orange-100" onClick={leftNavRes}>
             <i className="fas fa-angle-double-left left-toggle-icon text-gray-600"></i>
           </div>

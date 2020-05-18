@@ -42,6 +42,9 @@ function Navbar(props) {
       // hide left toggle open
       document.getElementById("left-toggle-open").classList.add("hidden");
       document.getElementById("left-toggle-open").classList.remove("block");
+      // move window content
+      document.getElementById("page-content").classList.add("push-right-nav-open");
+      document.getElementById("page-content").classList.remove("push-right-nav-closed");
     } else {
       // hide left bar
       document.getElementById("left-bar").classList.remove("block");
@@ -49,6 +52,9 @@ function Navbar(props) {
       // show left toggle open
       document.getElementById("left-toggle-open").classList.add("block");
       document.getElementById("left-toggle-open").classList.remove("hidden");
+      // move window content
+      document.getElementById("page-content").classList.add("push-right-nav-closed");
+      document.getElementById("page-content").classList.remove("push-right-nav-open");
     }
   };
 
@@ -87,7 +93,7 @@ function Navbar(props) {
           <i className="fas fa-angle-double-right left-toggle-icon text-gray-600"></i>
         </div>
       </div>
-      <div className="relative push-right push-down">{props.children}</div>
+      <div className="relative push-right-nav-open push-down" id="page-content">{props.children}</div>
     </div>
   )
 }

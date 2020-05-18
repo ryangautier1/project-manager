@@ -6,9 +6,14 @@
   height: calc(100vh - 5rem)!important;
 }
 
-.push-right {
+.push-right-nav-open {
   left: 16rem;
   width: calc(100vw - 17.25rem)!important;
+}
+
+.push-right-nav-closed {
+  left: 1.25rem;
+  width: calc(100vw - 2.5rem)!important;
 }
 
 .push-down {
